@@ -1,0 +1,26 @@
+.banner{
+    width: 100%;
+    height: 300px;
+    background-image: url(../../imagenes//fondo-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 20%;
+}
+
+.informacion-banner{
+    font-size: 20px;
+}
+
+.input-banner{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 550px) {
+    .banner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+  }

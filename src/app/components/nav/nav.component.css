@@ -1,0 +1,12 @@
+a {
+    color: white;
+}
+
+.logo{
+    border: 1px solid white;
+    padding: 1px 15px;
+}
+
+input{
+    border: none;
+}
