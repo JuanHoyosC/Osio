@@ -1,0 +1,12 @@
+footer {
+    background-color: #9D1717;
+    color: white;
+}
+
+.row {
+    display: flex;
+}
+
+.cadauno {
+    margin-left: 165px;
+}

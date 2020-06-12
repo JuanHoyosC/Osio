@@ -19,6 +19,20 @@
     padding: 5px;
 }
 
+.linea {
+    display: flex;
+}
+
+.card-image {
+    max-width:100%;
+    height: auto;
+    padding: 5px;
+    padding-left: 0;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+}
+
 @media (max-width: 550px) {
     .banner {
         padding-left: 20px;

@@ -1,1 +1,9 @@
-<p>restaurante works!</p>
+<div class="alert alert-danger text-center mt-5 mx-auto" role="alert" style="width: 450px; font-size: 30px" *ngIf = "mensaje">
+   {{texto}}
+</div>
+
+<div class="container" >
+    <div class="restaurante mx-auto" *ngIf = "!mensaje">
+
+    </div>
+</div>
