@@ -19,18 +19,33 @@
     padding: 5px;
 }
 
-.linea {
+.restaurantes {
     display: flex;
+    background: #EBEBEB;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 20px;
 }
 
-.card-image {
-    max-width:100%;
-    height: auto;
-    padding: 5px;
-    padding-left: 0;
+.logo {
+    width: 95px;
+    height: 95px;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+}
+
+.more-info {
+    margin-left: 3%;
+}
+
+.boton-restaurantes {
+    padding: 12px;
     border-radius: 10px;
-    border:none;
-    cursor: pointer;
+    background-color: #9D1717;
+    color: white;
 }
 
 @media (max-width: 550px) {
@@ -38,4 +53,4 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-}
+  }

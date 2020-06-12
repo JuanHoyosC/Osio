@@ -16,7 +16,8 @@ export class RestauranteComponent implements OnInit {
   constructor(private _activeRoute: ActivatedRoute, private _restaurante: RestaurantesService) { 
     this._activeRoute.params.subscribe( params=>{
       this.restaurante = this._restaurante.buscarRestaurante(params['id']);
-      if(this.restaurante = []){
+      console.log(this.restaurante)
+      if(this.restaurante == []){
         this.mensaje = true
         this.texto = "El restaurante "+ params['id'] + " no se encuentra en la base de datos";
       }else{

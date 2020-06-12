@@ -1,5 +1,33 @@
 .restaurante{
-    width: 500px;
+    width: 550px;
     border-radius: 7px;
-    border: 1px solid rgba(25, 25, 25, 0.5);
+    border: 1px solid rgba(25, 25, 25, 0.2);
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.3);
+}
+
+.descripcion{
+    font-size: 14px;
+}
+
+.oferta{
+    box-sizing: border-box;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.imagen-oferta{
+    width: 90px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.tachado{
+    text-decoration-line: line-through;
+}
+
+@media (max-width: 360px) {
+    .restaurante{
+        width: 330px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
 }

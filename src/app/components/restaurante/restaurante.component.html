@@ -2,8 +2,44 @@
    {{texto}}
 </div>
 
-<div class="container" >
-    <div class="restaurante mx-auto" *ngIf = "!mensaje">
+<div class="container my-5" >
+    <div class="restaurante mx-auto p-2" *ngIf = "!mensaje">
+        <h3>{{restaurante[0].nombre}}</h3>
 
+        <div class="imagen-restaurante">
+            <img [src]="restaurante[0].imagen" alt="" style="width: 100%;">
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-9 descripcion">
+                <p>{{restaurante[0].descripcion}}</p>
+            </div>
+
+            <div class="col-3">
+                <h6>Ver en el mapa</h6>
+                <img src="https://i.imgur.com/9m8zg0H.png" alt="" width="100%">
+            </div>
+        </div>
+
+        <div>
+            <h6>ofertas</h6>
+
+            <div class="oferta mb-2 row mx-0 p-1" *ngFor = "let oferta of restaurante[0].ofertas">
+                <div class="col-3">
+                    <span class = "imagen-oferta"><img [src]="oferta.imagen" alt=""class = "imagen-oferta"></span>
+                </div>
+
+                <div class="col-6 text-white mt-2">
+                    <p>{{oferta.nombre}}</p>
+                    <p>{{oferta.puntuacion}}</p>
+                </div>
+
+                <div class="col-3 text-white mt-2">
+                    <span class="tachado">{{oferta.precioNormal}}</span> 
+                    <span class ="ml-1">{{oferta.precioOferta}}</span>
+                </div>
+            </div>
+            
+        </div>
     </div>
 </div>
