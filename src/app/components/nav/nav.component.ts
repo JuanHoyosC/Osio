@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private elRef: ElementRef, private _router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  buscar():void{
+    const id = this.elRef.nativeElement.querySelector('#busqueda').value;
+    this._router.navigate(['/restaurante',id]);
   }
 
 }
